@@ -26,7 +26,7 @@ public struct FlightSearchParams {
     private let excludeCarriers: String?
     private let groupPricing: String?
     
-    init(country: String,
+    public init(country: String,
          currency: String,
          locale: String,
          originPlace: String,
