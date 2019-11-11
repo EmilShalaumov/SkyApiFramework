@@ -17,7 +17,7 @@ public class SkyScannerService {
         "content-type": "application/x-www-form-urlencoded"
     ]
     
-    static func getTicketList(searchParams: FlightSearchParams) {
+    public static func getTicketList(searchParams: FlightSearchParams) {
         createSession(searchParams: searchParams) { sessionKey in
             guard let sessionKey = sessionKey else {
                 return
