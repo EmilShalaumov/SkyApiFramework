@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E4DC465D2379F7F9000E0E03 /* SkyApiFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E4DC465B2379F7F9000E0E03 /* SkyApiFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4DC46642379F81B000E0E03 /* SkyScannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC46632379F81B000E0E03 /* SkyScannerService.swift */; };
+		E4DC46662379F824000E0E03 /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC46652379F824000E0E03 /* Leg.swift */; };
+		E4DC46682379F82C000E0E03 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC46672379F82C000E0E03 /* Place.swift */; };
+		E4DC466A2379F892000E0E03 /* FlightSearchParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC46692379F892000E0E03 /* FlightSearchParams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E4DC46582379F7F9000E0E03 /* SkyApiFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyApiFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DC465B2379F7F9000E0E03 /* SkyApiFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyApiFramework.h; sourceTree = "<group>"; };
 		E4DC465C2379F7F9000E0E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4DC46632379F81B000E0E03 /* SkyScannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyScannerService.swift; sourceTree = "<group>"; };
+		E4DC46652379F824000E0E03 /* Leg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leg.swift; sourceTree = "<group>"; };
+		E4DC46672379F82C000E0E03 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		E4DC46692379F892000E0E03 /* FlightSearchParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchParams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				E4DC465B2379F7F9000E0E03 /* SkyApiFramework.h */,
 				E4DC465C2379F7F9000E0E03 /* Info.plist */,
+				E4DC46632379F81B000E0E03 /* SkyScannerService.swift */,
+				E4DC46652379F824000E0E03 /* Leg.swift */,
+				E4DC46672379F82C000E0E03 /* Place.swift */,
+				E4DC46692379F892000E0E03 /* FlightSearchParams.swift */,
 			);
 			path = SkyApiFramework;
 			sourceTree = "<group>";
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					E4DC46572379F7F9000E0E03 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -130,6 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DC46682379F82C000E0E03 /* Place.swift in Sources */,
+				E4DC46662379F824000E0E03 /* Leg.swift in Sources */,
+				E4DC46642379F81B000E0E03 /* SkyScannerService.swift in Sources */,
+				E4DC466A2379F892000E0E03 /* FlightSearchParams.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +278,7 @@
 		E4DC46612379F7F9000E0E03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ES.SkyApiFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +305,7 @@
 		E4DC46622379F7F9000E0E03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
