@@ -1,0 +1,11 @@
+framework module SkyApiFramework {
+  umbrella header "SkyApiFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module SkyApiFramework.Swift {
+    header "SkyApiFramework-Swift.h"
+    requires objc
+}
